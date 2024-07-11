@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Delivery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Pizza Delivery</h1>
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#order">Order</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="menu">
+        <h2>Menu</h2>
+        <div class="menu-item">
+            <h3>Pepperoni Pizza</h3>
+            <p>Delicious pepperoni pizza with mozzarella cheese.</p>
+            <p>Price: $10.99</p>
+            <button onclick="addToCart('Pepperoni Pizza', 10.99)">Add to Cart</button>
+        </div>
+        <!-- Add more menu items here -->
+    </section>
+
+    <section id="order">
+        <h2>Your Order</h2>
+        <ul id="cart-items">
+            <!-- Items added to cart will appear here -->
+        </ul>
+        <button onclick="submitOrder()">Submit Order</button>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Phone: 123-456-7890</p>
+        <p>Email: info@example.com</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
